@@ -9,6 +9,7 @@
 <body>
 
     <header>
+        <button id="Login" onclick="window.location.href = 'loginFr.html'">Login</button>
         <h1><em>DoomSide</em></h1>
 		<button onclick="window.location.href = 'index.html';">English</button>
         <p>Exploration du projet</p>
@@ -38,10 +39,11 @@
         </article>
 
         <article>
-            <h2>Images</h2>
-            <img src="1.png">
-            <br>
-            <img src="2.png">
+            <div id="Imgtest">
+                <h2>Images</h2>
+                <img src="1.png" style='height: 90%; width: 90%; object-fit: contain'>
+                <br>
+                <img src="2.png" style='height: 90%; width: 90%; object-fit: contain'>            </div>
         </article>
 
         <article>
@@ -55,11 +57,21 @@
 		
 		<article>
 			<h2>Remerciement</h2>
-			<p>Je tiens à remercier mon ami et frère PGaz_Graves pour toute l'aide qu'il m'a apportée. Lien vers sa chaîne Twitch :  <br><a href="https://www.twitch.tv/pgaz_graves" target='_blank'>https://www.twitch.tv/pgaz_graves</a>
+			<p>Je tiens à remercier mon ami et même mon frère PGaz_Graves pour toute l'aide qu'il m'a apportée. Voici le lien vers sa chaîne Twitch :  <br><a href="https://www.twitch.tv/pgaz_graves" target='_blank'>https://www.twitch.tv/pgaz_graves</a>
                 <br>et sa page Throne pour l'aider
 			 à financer son livre :<br> <a href="https://throne.com/p-gaz/item/8e2f498d-90fe-4d7f-9a43-7109965cf050" target='_blank'>https://throne.com/p-gaz/item/8e2f498d-90fe-4d7f-9a43-7109965cf050</a></p>
 		</article>
+
+        <article>
+            <h2>Commentaires</h2>
+            <p><em>Developpement en cours</em></p>
+            <textarea id="comment" name="comment" rows="10" cols="45" placeholder="Mettez votre avis"></textarea>
+            <br>
+            <button id="submitbutton">Envoyer</button>
+            <br>
+        </article>
     </section>
+    
 
     <footer>
         <p>&copy; 2023 Linkatel. Tous droits réservés.</p>
