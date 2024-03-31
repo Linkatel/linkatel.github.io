@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-		<h1 id="titre"><em>DoomSide</em></h1>
+		<h1><em>DoomSide</em></h1>
 		<button onclick="window.location.href = 'connection.html';">English</button>
 		<p>Registre</p>
 	</header>
@@ -17,19 +17,21 @@
         <!-- liens de navigation ici -->
     </nav>
     
-    <div class="container" style="height: 90%; width: 90%; object-fit: contain">
-        <form>
+    <div class="container">
+        <form id="form" onsubmit="return validated()">
             <p><em>Developpement en cours</em></p>
-            <p id="pcreate">Register</p>
-            <input type="username" placeholder="Pseudo">
+            <p id="pcreate">Registre</p>
+            <input type="username" placeholder="Pseudo" name="Username" autocomplete="off">
+            <div id="email_error">Entrez un pseudo s'il vous plait</div>
             <br>
-            <input type="email" placeholder="Email">
+            <input type="text" name="email" placeholder="Email">
             <br>
-            <input type="password" placeholder="Mot de passe">
+            <input type="password" name="password" placeholder="Mot de passe">
+            <div id="password_error">Entrez un mot de passe d'au moins 5 caractères s'il vous plait</div>
             <br>
-            <button id="buttoncreate">Creation</button>
-            <p>Déja un compte ? <a href="loginFr.html">Login</a></p>
-            <a href='mainFr.html'>Revenir en arrière</a>
+            <button id="buttoncreate">Créer</button>
+            <p>Déja un compte ? <a href="login.html">Connection</a></p>
+            <a href='index.html'>Retour en arrière</a>
         </form>
     </div>
     <footer>
