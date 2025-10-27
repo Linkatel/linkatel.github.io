@@ -1,122 +1,116 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="src/CSS/styles.css">
-    <script src="src/JS/main.js"></script>
+    <title>Linkatel - Developer Portfolio</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#stacks">Stacks</a></li>
+            <li><a href="#spoken">Spoken Languages</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
 
-    <section id="accueil" class="hero">
-        <div class="floating-elements"></div>
+    <div class="hero">
+
         <div class="hero-content">
             <h1>Linkatel</h1>
-            <p>Développeur Full Stack & Designer Créatif</p>
-            <a href="#apropos" class="cta-button">Découvrir mon travail</a>
+            <p class="title">Developer</p>
         </div>
-    </section>
+        <div class="scroll-indicator"></div>
+    </div>
 
-    <section id="apropos" class="section">
-        <div class="container">
-            <h2 class="section-title">À propos</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Passionné par le développement web et la création d'expériences utilisateur exceptionnelles, je combine créativité et expertise technique pour donner vie à vos projets les plus ambitieux.</p>
-                    <p>Avec une approche moderne et innovante, je me spécialise dans la création d'applications web performantes et de designs élégants qui captivent et engagent votre audience.</p>
-                </div>
-                <div class="about-image">
-                    <div class="profile-img"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="competences" class="section">
-        <div class="container">
-            <h2 class="section-title">Compétences</h2>
+    <div class="container">
+        <section id="languages">
+            <h2>Programming Languages</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>Développement Frontend</h3>
-                    <p>JavaScript, HTML5, CSS3</p>
+                    <h3>Web Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>Développement Backend</h3>
-                    <p>Python</p>
+                    <h3>Backend & General Purpose</h3>
+                    <ul class="skill-list">
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="stacks">
+            <h2>Stacks & Frameworks</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Game Development</h3>
+                    <ul class="skill-list">
+                        <li>Minecraft Development</li>
+                        <li>SpigotMC</li>
+                    </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>Outils & DevOps</h3>
-                    <p>Git, Performance Optimization</p>
+                    <h3>Application Development</h3>
+                    <ul class="skill-list">
+                        <li>Electron</li>
+                        <li>Node.js</li>
+                        <li>JavaFX</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projets" class="section">
-        <div class="container">
-            <h2 class="section-title">Projets</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">🚀</div>
-                    <div class="project-content">
-                        <h3>Application E-commerce</h3>
-                        <p>Plateforme complète avec paiement intégré, gestion des stocks et tableau de bord administrateur.</p>
-                    </div>
+        <section id="spoken">
+            <h2>Spoken Languages</h2>
+            <div class="languages-container">
+                <div class="language-card">
+                    <div class="language-name">French</div>
+                    <div class="language-level">Native Speaker</div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">🎨</div>
-                    <div class="project-content">
-                        <h3>Site Vitrine Premium</h3>
-                        <p>Site web moderne avec animations avancées et optimisation SEO pour une agence de design.</p>
-                    </div>
+                <div class="language-card">
+                    <div class="language-name">English</div>
+                    <div class="language-level">Proficient</div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" required>
+        <section id="skills">
+            <h2>Additional Expertise</h2>
+            <div class="special-skill">
+                <h3>Artificial Intelligence</h3>
+                <p>Experienced in leveraging AI technologies and tools for development solutions</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <a href="https://discord.com/users/836591122381930497" target="_blank" class="contact_a">
+                    <div class="contact-card">
+                        <div class="contact-name">Discord</div>
+                    </div>
+                </a>
+                <a href="https://github.com/Linkatel" target="_blank" class="contact_a">
+                    <div class="contact-card">
+                        <div class="contact-name">Github</div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Envoyer le message</button>
-            </form>
-        </div>
-    </section>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
 
     <footer>
-        <div class="container">
-            <div class="social-links">
-		<a href="discord">Discord</a>
-                <a href="https://github.com/Linkatel">GitHub</a>
-                <a href="#">Twitter</a>
-            </div>
-            <p>&copy; 2025 Portfolio. Tous droits réservés.</p>
-        </div>
+        <p>&copy; 2025 Linkatel. All rights reserved.</p>
     </footer>
 </body>
 </html>
