@@ -734,6 +734,10 @@ footer ul {
     place-items: center
 }
 
+.tile img {
+    width: 100%;
+}
+
 .tile[hidden] {
     display: none
 }
