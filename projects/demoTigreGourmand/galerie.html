@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galerie – Tigre Gourmand</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <meta name="description" content="Photos et vidéos du festival Tigre Gourmand.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <a class="logo" href="index.html"><i aria-hidden="true"><img src="logo.jpeg"
+            alt="Logo de Tigre Gourmand"></i>Tigre Gourmand</a>
+      <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-controls="menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav id="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="galerie.html" aria-current="page">Galerie</a></li>
+          <li><a href="plan.html">Plan</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="exposants.html">Exposants</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a class="btn" href="billetterie.html">Billetterie</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Galerie</h1>
+      <p>Photos et vidéos des éditions précédentes.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="gal">
+      <div class="wrap">
+        <div class="tabs" role="group" aria-label="Filtrer la galerie">
+          <button type="button" data-f="all" aria-pressed="true">Tout</button>
+          <button type="button" data-f="photo" aria-pressed="false">Photos</button>
+          <button type="button" data-f="video" aria-pressed="false">Vidéos</button>
+        </div>
+        <div class="gallery">
+          <figure class="tile big" data-t="video"><span class="play" aria-hidden="true"></span>
+            <img src="aftermovie.jpg" alt="">
+            <figcaption>Aftermovie 2026</figcaption>
+          </figure>
+          <figure class="tile" data-t="photo">
+            <img src="degustation_japonais.jpg" alt="">
+            <figcaption>Dégustation</figcaption>
+          </figure>
+          <figure class="tile" data-t="video">
+            <img src="chef_japonais.jpg" alt="">
+            <figcaption>Show du chef</figcaption>
+          </figure>
+          <figure class="tile" data-t="photo">
+            <img src="marche_japonais.jpg" alt="">
+            <figcaption>Marché japonais</figcaption>
+          </figure>
+          <figure class="tile" data-t="photo">
+            <img src="stand.jpg" alt="">
+            <figcaption>Les stands</figcaption>
+          </figure>
+          <figure class="tile" data-t="video">
+            <span class="play" aria-hidden="true"></span>
+            <img src="taiko.jpg" alt="">
+            
+              
+            </span>
+            <figcaption>Concert de taiko</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="big">Rendez-vous du 11 au 13 juin 2027 !</p>
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">CGV billetterie</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

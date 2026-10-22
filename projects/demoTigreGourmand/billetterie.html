@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Billetterie – Tigre Gourmand</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <meta name="description" content="Billetterie du festival Tigre Gourmand.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <a class="logo" href="index.html"><i aria-hidden="true"><img src="logo.jpeg"
+            alt="Logo de Tigre Gourmand"></i>Tigre Gourmand</a>
+      <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-controls="menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav id="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="plan.html">Plan</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="exposants.html">Exposants</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a class="btn" href="billetterie.html">Billetterie</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Billetterie</h1>
+      <p>Réservez vos billets pour les 11, 12 et 13 juin 2027.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="tix">
+      <div class="wrap">
+        <div class="tix-grid">
+          <article class="ticket" data-price="5">
+            <h3>Billet 1 jour</h3>
+            <p class="price">5 €</p>
+            <p>Entrée au tarif web, valable un jour au choix.</p>
+            <div class="qty"><button type="button" data-d="-1"
+                aria-label="Retirer : Billet 1 jour">−</button><output>0</output><button type="button" data-d="1"
+                aria-label="Ajouter : Billet 1 jour">+</button></div>
+          </article>
+          <article class="ticket best" data-price="12"><span class="tag">Le plus choisi</span>
+            <h3>Pass 3 jours</h3>
+            <p class="price">12 €</p>
+            <p>Accès illimité du vendredi au dimanche.</p>
+            <div class="qty"><button type="button" data-d="-1"
+                aria-label="Retirer : Pass 3 jours">−</button><output>0</output><button type="button" data-d="1"
+                aria-label="Ajouter : Pass 3 jours">+</button></div>
+          </article>
+          <article class="ticket" data-price="3">
+            <h3>Tarif réduit</h3>
+            <p class="price">3 €</p>
+            <p>Étudiants, demandeurs d'emploi, 4 à 18 ans.</p>
+            <div class="qty"><button type="button" data-d="-1"
+                aria-label="Retirer : Tarif réduit">−</button><output>0</output><button type="button" data-d="1"
+                aria-label="Ajouter : Tarif réduit">+</button></div>
+          </article>
+          <article class="ticket" data-price="20">
+            <h3>Pass dégustation</h3>
+            <p class="price">20 €</p>
+            <p>Entrée 1 jour et 5 tickets de dégustation.</p>
+            <div class="qty"><button type="button" data-d="-1"
+                aria-label="Retirer : Pass dégustation">−</button><output>0</output><button type="button" data-d="1"
+                aria-label="Ajouter : Pass dégustation">+</button></div>
+          </article>
+        </div>
+        <div class="order">
+          <p><b id="count">0 billet</b> · Total <b id="total">0 €</b></p>
+          <button class="btn" type="button" id="order-btn">Commander</button>
+        </div>
+        <p class="note" id="order-msg" role="status">Gratuit pour les moins de 4 ans et pour les visiteurs à vélo.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="big">Rendez-vous du 11 au 13 juin 2027 !</p>
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">CGV billetterie</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

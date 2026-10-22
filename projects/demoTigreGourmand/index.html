@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tigre Gourmand</title>
-  <link rel="icon" type="image/jpeg" href="/logo.jpeg">
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
   <meta name="description"
-    content="Tigre Gourmand, le festival annuel du ramen. Billetterie, galerie, plan et espace exposants.">
+    content="Tigre Gourmand, le festival annuel du ramen. Programme, billetterie, boutique, galerie, plan et espace exposants.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap"
@@ -19,16 +19,19 @@
 
   <header>
     <div class="nav">
-      <a class="logo" href="#"><i aria-hidden="true"><img src="logo.jpeg" alt="logo de Tigre Gourmang"></i>Tigre
-        gourmand</a>
-      <nav aria-label="Navigation principale">
+      <a class="logo" href="index.html"><i aria-hidden="true"><img src="logo.jpeg"
+            alt="Logo de Tigre Gourmand"></i>Tigre Gourmand</a>
+      <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-controls="menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav id="menu" aria-label="Navigation principale">
         <ul>
-          <li><a href="#evenement">L'événement</a></li>
-          <li><a href="#galerie">Galerie</a></li>
-          <li><a href="#plan">Plan</a></li>
-          <li><a href="#exposants">Exposants</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a class="btn" href="#billetterie">Billetterie</a></li>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="plan.html">Plan</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="exposants.html">Exposants</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a class="btn" href="billetterie.html">Billetterie</a></li>
         </ul>
       </nav>
     </div>
@@ -37,58 +40,82 @@
   <section class="hero">
     <div class="wrap">
       <div>
+        <a class="badge" href="#invite">★ Invité d'honneur : Squeezie</a>
         <h1>Tigre Gourmand<span>Le festival du ramen</span></h1>
         <p class="dates">3e édition · du 11 au 13 juin 2027 · Parc des expositions</p>
         <p class="sub">Trois jours de bouillons, de nouilles et de cuisine japonaise, avec 40 stands et des chefs
           invités.</p>
         <div class="cta">
-          <a class="btn" href="#billetterie">Acheter mes billets</a>
-          <a class="btn alt" href="#exposants">Devenir exposant</a>
+          <a class="btn" href="billetterie.html">Acheter mes billets</a>
+          <a class="btn alt" href="exposants.html">Devenir exposant</a>
         </div>
       </div>
     </div>
   </section>
 
   <div class="ticker" aria-hidden="true">
-    <div>
-      <span>Tigre Gourmand 2027</span><span>11 – 13 JUIN</span><span>40 STANDS</span><span>BILLETS EN LIGNE</span>
-      <span>Tigre Gourmand 2027</span><span>11 – 13 JUIN</span><span>40 STANDS</span><span>BILLETS EN LIGNE</span>
-      <span>Tigre Gourmand 2027</span><span>11 – 13 JUIN</span><span>40 STANDS</span><span>BILLETS EN LIGNE</span>
-      <span>Tigre Gourmand 2027</span><span>11 – 13 JUIN</span><span>40 STANDS</span><span>BILLETS EN LIGNE</span>
-    </div>
+    <div><span>TIGRE GOURMAND 2027</span><span>11 – 13 JUIN</span><span>INVITÉ STAR</span><span>40
+        STANDS</span><span>TIGRE GOURMAND 2027</span><span>11 – 13 JUIN</span><span>INVITÉ STAR</span><span>40
+        STANDS</span><span>TIGRE GOURMAND 2027</span><span>11 – 13 JUIN</span><span>INVITÉ STAR</span><span>40
+        STANDS</span><span>TIGRE GOURMAND 2027</span><span>11 – 13 JUIN</span><span>INVITÉ STAR</span><span>40
+        STANDS</span></div>
   </div>
 
   <main>
-    <section class="wrap intro" id="evenement">
-      <div class="ph" role="img" aria-label="Emplacement photo"><img src="img2.jpg" alt=""></div>
+    <section class="wrap intro">
+      <div class="ph" aria-hidden="true"><img src="img2.jpg" alt=""></div>
       <div>
         <h2>Le rendez-vous annuel des amoureux de nouilles</h2>
         <p>Un festival <strong>festif</strong>, <strong>gourmand</strong> et ouvert à tous : dégustations,
-          démonstrations de chefs, concours et marché de producteurs.</p>
-        <a class="btn" href="#plan">Voir le plan</a>
+          démonstrations de chefs et marché de producteurs.</p>
+        <p>Trois jours pour célébrer le ramen sous toutes ses formes, en famille ou entre amis, avec des bols pour tous
+          les goûts, végétariens compris.</p>
+        <a class="btn" href="plan.html">Voir le plan</a>
+      </div>
+    </section>
+
+    <section class="star" id="invite">
+      <div class="wrap star-layout">
+        <div class="portrait" aria-hidden="true"><img src="squeezie.jpg" alt=""></div>
+        <div>
+          <span class="badge">★ Invité d'honneur</span>
+          <p class="star-name">Squeezie</p>
+          <p class="star-when">Samedi 12 juin · 15h · Scène principale</p>
+          <p>Squeezie, chef et ambassadeur du ramen, vient goûter les bols du festival en direct, rencontrer le public
+            et élire son préféré.</p>
+          <ul class="star-facts">
+            <li>Dégustation en direct sur scène</li>
+            <li>Rencontre et photos avec le public</li>
+            <li>Vote pour le « Bol du Tigre »</li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="billetterie.html">Réserver ma place</a>
+            <a class="btn alt" href="programme.html">Voir le programme</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="exp">
       <div class="wrap">
-        <h2>4 temps forts à ne pas manquer</h2>
+        <h2>3 temps forts à ne pas manquer</h2>
         <div class="exp-grid">
           <article class="exp-card">
-            <div class="ph">[ Photo ]</div>
+            <div class="ph" aria-hidden="true"><img src="degustation_japonais.jpg" alt=""></div>
             <div class="t">
               <h3>Dégustations</h3>
-              <p>Une quarantaine de bols à goûter en petites portions.</p>
+              <p>Une quarantaine de bols à goûter en petites portions, des classiques aux créations.</p>
             </div>
           </article>
           <article class="exp-card">
-            <div class="ph">[ Photo ]</div>
+            <div class="ph" aria-hidden="true"><img src="chef_japonais.jpg" alt=""></div>
             <div class="t">
               <h3>Shows de chefs</h3>
               <p>Nouilles tirées à la main et bouillons en direct sur la scène principale.</p>
             </div>
           </article>
           <article class="exp-card">
-            <div class="ph">[ Photo ]</div>
+            <div class="ph" aria-hidden="true"><img src="marche_japonais.jpg" alt=""></div>
             <div class="t">
               <h3>Marché japonais</h3>
               <p>Vaisselle, thés, sauces et produits d'épicerie fine importés du Japon.</p>
@@ -107,156 +134,7 @@
       </div>
     </section>
 
-    <section class="tix" id="billetterie">
-      <div class="wrap">
-        <h2>Billetterie</h2>
-        <p class="lead">Choisissez vos billets.</p>
-        <div class="tix-grid">
-          <article class="ticket" data-price="5">
-            <h3>Billet 1 jour</h3>
-            <p class="price">5 €</p>
-            <p>Entrée au tarif web, valable un jour au choix.</p>
-            <div class="qty"><button type="button" data-d="-1"
-                aria-label="Retirer un billet 1 jour">−</button><output>0</output><button type="button" data-d="1"
-                aria-label="Ajouter un billet 1 jour">+</button></div>
-          </article>
-          <article class="ticket best" data-price="12"><span class="tag">Le plus choisi</span>
-            <h3>Pass 3 jours</h3>
-            <p class="price">12 €</p>
-            <p>Accès illimité du vendredi au dimanche.</p>
-            <div class="qty"><button type="button" data-d="-1"
-                aria-label="Retirer un pass 3 jours">−</button><output>0</output><button type="button" data-d="1"
-                aria-label="Ajouter un pass 3 jours">+</button></div>
-          </article>
-          <article class="ticket" data-price="3">
-            <h3>Tarif réduit</h3>
-            <p class="price">3 €</p>
-            <p>Étudiants, demandeurs d'emploi, 4 à 18 ans.</p>
-            <div class="qty"><button type="button" data-d="-1"
-                aria-label="Retirer un billet réduit">−</button><output>0</output><button type="button" data-d="1"
-                aria-label="Ajouter un billet réduit">+</button></div>
-          </article>
-          <article class="ticket" data-price="20">
-            <h3>Pass dégustation</h3>
-            <p class="price">20 €</p>
-            <p>Entrée 1 jour et 5 tickets de dégustation.</p>
-            <div class="qty"><button type="button" data-d="-1"
-                aria-label="Retirer un pass dégustation">−</button><output>0</output><button type="button" data-d="1"
-                aria-label="Ajouter un pass dégustation">+</button></div>
-          </article>
-        </div>
-        <div class="order">
-          <p><b id="count">0 billet</b> · Total <b id="total">0 €</b></p>
-          <button class="btn" type="button" id="order-btn">Commander</button>
-        </div>
-        <p class="note" id="order-msg" role="status">Gratuit pour les moins de 4 ans et pour les visiteurs à vélo.</p>
-      </div>
-    </section>
-
-    <section class="gal" id="galerie">
-      <div class="wrap">
-        <h2>Galerie photos et vidéos</h2>
-        <div class="tabs" role="group" aria-label="Filtrer la galerie">
-          <button type="button" data-f="all" aria-pressed="true">Tout</button>
-          <button type="button" data-f="photo" aria-pressed="false">Photos</button>
-          <button type="button" data-f="video" aria-pressed="false">Vidéos</button>
-        </div>
-        <div class="gallery">
-          <figure class="tile big" data-t="video">
-            <figcaption>Aftermovie 2026</figcaption>
-            <img src="img5.jpg" alt="">
-          </figure>
-          <figure class="tile" data-t="photo">
-            <figcaption>Photo 1</figcaption>
-          </figure>
-          <figure class="tile" data-t="photo"><span class="play" aria-hidden="true"></span>
-            <figcaption>Photo 2</figcaption>
-          </figure>
-          <figure class="tile" data-t="video"><span class="play" aria-hidden="true"></span>
-            <figcaption>Show du chef</figcaption>
-          </figure>
-          <figure class="tile" data-t="photo">
-            <figcaption>Photo 3</figcaption>
-          </figure>
-          <figure class="tile" data-t="photo">
-            <figcaption>Photo 4</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="planbox" id="plan">
-      <div class="wrap">
-        <h2>Plan du festival</h2>
-        <div class="plan-layout">
-          <div class="plan" role="img" aria-label="Plan schématique du festival">
-            <div class="z z-scene">Scène</div>
-            <div class="z z-ramen">Halle des ramen</div>
-            <div class="z z-prod">Producteurs</div>
-            <div class="z z-food">Tables</div>
-            <div class="z z-pro">Espace pro</div>
-            <div class="z z-ent">Entrée</div>
-          </div>
-          <ul class="legend">
-            <li><i class="s-scene"></i>
-              <div><b>Scène</b><span>Shows de chefs, concours, concerts.</span></div>
-            </li>
-            <li><i class="s-ramen"></i>
-              <div><b>Halle des ramen</b><span>40 stands de dégustation.</span></div>
-            </li>
-            <li><i class="s-prod"></i>
-              <div><b>Producteurs</b><span>Marché japonais et épicerie fine.</span></div>
-            </li>
-            <li><i class="s-food"></i>
-              <div><b>Tables</b><span>Espace assis pour 300 personnes.</span></div>
-            </li>
-            <li><i class="s-pro"></i>
-              <div><b>Espace pro</b><span>Rencontres exposants et partenaires.</span></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="exh" id="exposants">
-      <div class="wrap">
-        <h2>Espace exposants</h2>
-        <p class="lead">Vous êtes restaurateur, producteur ou artisan ? Déposez votre demande, l'équipe vous répond sous
-          5 jours ouvrés.</p>
-        <div class="exh-layout">
-          <div class="stands">
-            <h3>Formules de stand</h3>
-            <ul>
-              <li><span>Stand 9 m²</span><b>450 €</b></li>
-              <li><span>Stand 18 m²</span><b>800 €</b></li>
-              <li><span>Food truck</span><b>600 €</b></li>
-              <li><span>Espace producteur</span><b>250 €</b></li>
-            </ul>
-            <p class="note">Tarifs fictifs. Électricité, eau et assurance en option. Dossier complet à télécharger : [
-              lien PDF ].</p>
-          </div>
-          <form class="exh-form" id="exh-form">
-            <label>Société <input type="text" name="societe" required></label>
-            <label>Nom et prénom <input type="text" name="nom" required></label>
-            <label>E-mail professionnel <input type="email" name="email" required></label>
-            <label>Téléphone <input type="tel" name="tel"></label>
-            <label>Type de stand
-              <select name="stand">
-                <option>Stand 9 m²</option>
-                <option>Stand 18 m²</option>
-                <option>Food truck</option>
-                <option>Espace producteur</option>
-              </select>
-            </label>
-            <label>Votre projet <textarea name="message" rows="4"></textarea></label>
-            <button class="btn" type="submit">Envoyer ma demande</button>
-            <p class="note" id="exh-msg" role="status"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="info" id="infos">
+    <section class="info">
       <div class="wrap">
         <h2>Informations pratiques</h2>
         <div class="info-grid">
@@ -321,73 +199,7 @@
     </div>
   </footer>
 
-  <script>
-    (function () {
-      // Navbar transparente en haut, pleine au scroll
-      var header = document.querySelector("header");
-
-      function update() {
-        header.classList.toggle("scrolled", window.scrollY > 40);
-      }
-      update();
-      window.addEventListener("scroll", update, {
-        passive: true
-      });
-
-      // Billetterie (placeholder)
-      var cards = document.querySelectorAll(".ticket"),
-        total = document.getElementById("total"),
-        count = document.getElementById("count"),
-        msg = document.getElementById("order-msg");
-
-      function sum() {
-        var t = 0,
-          n = 0;
-        cards.forEach(function (c) {
-          var q = +c.querySelector("output").textContent;
-          t += q * c.dataset.price;
-          n += q;
-        });
-        total.textContent = t + " €";
-        count.textContent = n + (n > 1 ? " billets" : " billet");
-      }
-      cards.forEach(function (c) {
-        var out = c.querySelector("output");
-        c.querySelectorAll(".qty button").forEach(function (b) {
-          b.addEventListener("click", function () {
-            out.textContent = Math.max(0, Math.min(10, +out.textContent + +b.dataset.d));
-            sum();
-          });
-        });
-      });
-      document.getElementById("order-btn").addEventListener("click", function () {
-        msg.textContent = count.textContent.charAt(0) === "0" ?
-          "Ajoutez au moins un billet pour commander." :
-          "Placeholder : ici, redirection vers le paiement de votre prestataire.";
-      });
-
-      // Filtre de la galerie
-      var tabs = document.querySelectorAll(".tabs button");
-      tabs.forEach(function (b) {
-        b.addEventListener("click", function () {
-          tabs.forEach(function (x) {
-            x.setAttribute("aria-pressed", x === b);
-          });
-          document.querySelectorAll(".tile").forEach(function (t) {
-            t.hidden = b.dataset.f !== "all" && t.dataset.t !== b.dataset.f;
-          });
-        });
-      });
-
-      // Formulaire exposants (placeholder)
-      document.getElementById("exh-form").addEventListener("submit", function (e) {
-        e.preventDefault();
-        document.getElementById("exh-msg").textContent = "Merci ! Demande reçue.";
-        e.target.reset();
-      });
-    })();
-  </script>
-
+  <script src="script.js"></script>
 </body>
 
 </html>

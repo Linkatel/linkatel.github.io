@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boutique – Tigre Gourmand</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <meta name="description" content="Boutique officielle du festival Tigre Gourmand.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <a class="logo" href="index.html"><i aria-hidden="true"><img src="logo.jpeg"
+            alt="Logo de Tigre Gourmand"></i>Tigre Gourmand</a>
+      <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-controls="menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav id="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="plan.html">Plan</a></li>
+          <li><a href="boutique.html" aria-current="page">Boutique</a></li>
+          <li><a href="exposants.html">Exposants</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a class="btn" href="billetterie.html">Billetterie</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Boutique officielle</h1>
+      <p>Repartez avec un souvenir de Tigre Gourmand.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="shop">
+      <div class="wrap">
+        <div class="shop-grid">
+          <article class="product">
+            <div class="ph" aria-hidden="true"></div>
+            <h3>T-shirt Tigre</h3>
+            <p class="price">25 €</p><button class="btn add" type="button">Ajouter au panier</button>
+          </article>
+          <article class="product">
+            <div class="ph" aria-hidden="true"></div>
+            <h3>Tote bag</h3>
+            <p class="price">12 €</p><button class="btn add" type="button">Ajouter au panier</button>
+          </article>
+          <article class="product">
+            <div class="ph" aria-hidden="true"></div>
+            <h3>Bol en céramique</h3>
+            <p class="price">22 €</p><button class="btn add" type="button">Ajouter au panier</button>
+          </article>
+          <article class="product">
+            <div class="ph" aria-hidden="true"></div>
+            <h3>Set de baguettes</h3>
+            <p class="price">9 €</p><button class="btn add" type="button">Ajouter au panier</button>
+          </article>
+        </div>
+        <p class="note" id="cart" role="status">Retrait au stand officiel du festival ou livraison à domicile.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="big">Rendez-vous du 11 au 13 juin 2027 !</p>
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">CGV billetterie</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
